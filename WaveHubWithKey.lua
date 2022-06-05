@@ -29,14 +29,14 @@ end
 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub"; -- the title (ofc)
-Text = "version 5.6"; -- what the text says (ofc)
+Text = "version 5.7"; -- what the text says (ofc)
 --Icon = "rbxassetid://57254792"; -- the image if u want. 
 Duration = 1; -- how long the notification should in secounds
 })
 wait(7)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub Latest update"; -- the title (ofc)
-Text = "test?"; -- what the text says (ofc)
+Text = "auto exe light autofarm and speeded up auto exe haki2"; -- what the text says (ofc)
 --Icon = "rbxassetid://57254792"; -- the image if u want. 
 Duration = 5; -- how long the notification should in secounds
 })
