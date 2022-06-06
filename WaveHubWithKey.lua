@@ -16,7 +16,7 @@ end)
 end
 ServerPorn()
  
-
+repeat wait() until game:IsLoaded()
 local BlackList = {419447048}
 
 local Players = game:GetService("Players")
@@ -29,7 +29,7 @@ end
 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub"; -- the title (ofc)
-Text = "version 5.9"; -- what the text says (ofc)
+Text = "version 6"; -- what the text says (ofc)
 --Icon = "rbxassetid://57254792"; -- the image if u want. 
 Duration = 1; -- how long the notification should in secounds
 })
