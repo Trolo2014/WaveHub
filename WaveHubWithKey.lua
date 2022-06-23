@@ -17,6 +17,35 @@ end
 ServerPorn()
 
 repeat wait() until game:IsLoaded()
+local OnJoinKickList = {3303731798}
+
+function Fuck()
+      local x = {}
+	for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+		if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+			x[#x + 1] = v.id
+		end
+	end
+	if #x > 0 then
+		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+	else
+		return notify("Serverhop","Couldn't find a server.")
+	end
+end
+
+local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer
+for i,v in pairs(Players:GetPlayers()) do 
+    if table.find(OnJoinKickList, v.UserId) then
+     Fuck()
+    end 
+end
+Players.PlayerAdded:Connect(function(plr)
+    if table.find(OnJoinKickList, plr.UserId) then 
+        Fuck()
+    end 
+end)
+
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub"; -- the title (ofc)
 Text = "version 7.0"; -- what the text says (ofc)
