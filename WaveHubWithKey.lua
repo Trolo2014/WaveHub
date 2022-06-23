@@ -17,26 +17,16 @@ end
 ServerPorn()
  
 repeat wait() until game:IsLoaded()
-local BlackList = {419447048}
-
-local Players = game:GetService("Players")
-local Lp = Players.LocalPlayer
-for i,v in pairs(Players:GetPlayers()) do 
-    if table.find(BlackList, v.UserId) then 
-        game:GetService("TeleportService"):Teleport(5373028495, game:GetService("Players").LocalPlayer)
-    end 
-end
-
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub"; -- the title (ofc)
-Text = "version 6.8"; -- what the text says (ofc)
+Text = "version 6.9"; -- what the text says (ofc)
 --Icon = "rbxassetid://57254792"; -- the image if u want. 
 Duration = 1; -- how long the notification should in secounds
 })
 wait(5)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub Latest update"; -- the title (ofc)
-Text = "simple key"; -- what the text says (ofc)
+Text = "69"; -- what the text says (ofc)
 --Icon = "rbxassetid://57254792"; -- the image if u want. 
 Duration = 5; -- how long the notification should in secounds
 })
