@@ -25,7 +25,7 @@ Duration = 1; -- how long the notification should in secounds
 wait(5)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub Latest update"; -- the title (ofc)
-Text = "Rejoin/Server Hop"; -- what the text says (ofc)
+Text = "Rejoin/Server Hop (Misc)"; -- what the text says (ofc)
 --Icon = "rbxassetid://57254792"; -- the image if u want. 
 Duration = 5; -- how long the notification should in secounds
 })
