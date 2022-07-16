@@ -1,4 +1,5 @@
 function ServerPorn()
+spawn(function()
 repeat wait() until game.CoreGui:FindFirstChild('RobloxPromptGui')
 local lp,po,ts = game:GetService('Players').LocalPlayer,game.CoreGui.RobloxPromptGui.promptOverlay,game:GetService('TeleportService')
 po.ChildAdded:connect(function(a)
@@ -9,7 +10,9 @@ po.ChildAdded:connect(function(a)
         until false
     end
 end)
+end)
 end
+ServerPorn()
 
 repeat wait() until game:IsLoaded()
 
